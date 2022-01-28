@@ -167,10 +167,106 @@ header nav .menu a li:hover{
 }
 .products-section .products .products-card .buy-btn{
     padding:1rem 2rem;
-    border-radius: 1rem;
+s    border-radius: 1rem;
     line-height: 1rem;
     font-size: 1.5rem;
     margin-top: 1rem;
     background-color: white;
     border: 2px solid #efefefef;
+}
+/* service section  */
+.best .title h1{
+    font-weight: bold;
+    font-size: 5rem;
+    text-align: center;
+}
+.best .grid{
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr); */
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem 15rem;
+    
+}
+.best .grid .enlightment{
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+   
+
+}
+
+/* footer section  */
+footer{
+    margin-top: 5rem;
+    font-size: 1rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #efefefef;
+}
+
+/* responsive for devices */
+@media (max-width: 576px) {
+    header, 
+    .hero-section, 
+    .products-section {
+     padding:0 5rem;
+    }
+    .hero-section, 
+    .products-section {
+     margin-bottom: 12rem;
+    }
+    header nav .logo h1{
+        font-size: 2rem;
+    }
+    header nav .menu a{
+        margin-left: 1rem;
+    }
+    header nav .menu li{
+        font-size: 1.5rem;
+    }
+
+    .hero-section{
+        flex-direction: column;
+    }
+    .hero-section .hero-content{
+        order: 2;
+        width: 100%;
+    }
+    .hero-section .hero-content h1{
+        font-size: 2rem;
+        width: 100%;
+        line-height: 6rem;
+        margin-bottom: 2rem;
+    }
+    .hero-section .hero-content p{
+        width: 100%;
+        font-size: 2rem;
+        margin-bottom: 5rem;
+    }
+    .hero-section .hero-img{
+        order: 1;
+        width: 100%;
+    }
+    .hero-section .hero-img img{
+        width: 100%;
+    }
+    .products-section h1{
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        line-height: 6rem;
+    }
+    .products-section .products{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .best{
+        display: none;
+    }
+    footer p{
+        font-size: 0.5rem;
+    }
 }
